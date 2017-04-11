@@ -3,16 +3,16 @@
 
 mysql数据表 weather_data 结构如下:
 
-| Field        | Type      | Null   | Key   | Default   | Extra   |
-| ------------ | --------- | ------ | ----- | --------- | ------- |
-| year         | int(11)   | YES    |       | NULL      |         |
-| month        | int(11)   | YES    |       | NULL      |         |
-| day          | int(11)   | YES    |       | NULL      |         |
-| hour         | int(11)   | YES    |       | NULL      |         |
-| temperature  | float     | YES    |       | NULL      |         |
-| humidity     | int(11)   | YES    |       | NULL      |         |
-| windspeed    | float     | YES    |       | NULL      |         |
-| weatherType  | int(11)   | YES    |       | NULL      |         |
+| Field        | Type  | describe                                      |
+| ------------ | ----- | ---------------------------------------------
+| year         | int   | 年份                                          |
+| month        | int   | 月份                                          |
+| day          | int   | 天数                                          |
+| hour         | int   | 小时                                          |
+| temperature  | float | 温度，单位：摄氏度                            |
+| humidity     | int   | 湿度，单位：%                                 |
+| windspeed    | float | 风速，单位：km/h                              |
+| weatherType  | int   | snow: 1, rain: 2, fog: 3, hail:4, other: 0    |
 
 
 ## Usage
