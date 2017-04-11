@@ -2,18 +2,17 @@
 从 www.wunderground.com 获取天气历史数据，解析json response获得每小时的天气信息，存储到mysql数据库中
 
 mysql数据表 weather_data 结构如下:
-+-------------+---------+------+-----+---------+-------+
-| Field       | Type    | Null | Key | Default | Extra |
-+-------------+---------+------+-----+---------+-------+
-| year        | int(11) | YES  |     | NULL    |       |
-| month       | int(11) | YES  |     | NULL    |       |
-| day         | int(11) | YES  |     | NULL    |       |
-| hour        | int(11) | YES  |     | NULL    |       |
-| temperature | float   | YES  |     | NULL    |       |
-| humidity    | int(11) | YES  |     | NULL    |       |
-| windspeed   | float   | YES  |     | NULL    |       |
-| weatherType | int(11) | YES  |     | NULL    |       |
-+-------------+---------+------+-----+---------+-------+
+
+| Field        | Type      | Null   | Key   | Default   | Extra   |
+| ------------ | --------- | ------ | ----- | --------- | ------- |
+| year         | int(11)   | YES    |       | NULL      |         |
+| month        | int(11)   | YES    |       | NULL      |         |
+| day          | int(11)   | YES    |       | NULL      |         |
+| hour         | int(11)   | YES    |       | NULL      |         |
+| temperature  | float     | YES    |       | NULL      |         |
+| humidity     | int(11)   | YES    |       | NULL      |         |
+| windspeed    | float     | YES    |       | NULL      |         |
+| weatherType  | int(11)   | YES    |       | NULL      |         |
 
 
 ## Usage
@@ -26,7 +25,7 @@ bundle install --path vendor
 ```
 cp .env.example .env
 ```
-参考.env中的说明以及自己的需求修改.env文件
+  参考.env中的说明以及自己的需求修改.env文件
 
 3. 从 www.wunderground.com 获取天气信息，并解析存到mysql
 ```
